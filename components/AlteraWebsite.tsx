@@ -10,7 +10,7 @@ const AlteraWebsite = () => {
     setIsVisible(true);
   }, []);
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
