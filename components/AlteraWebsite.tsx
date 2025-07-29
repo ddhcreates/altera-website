@@ -230,7 +230,7 @@ const AlteraWebsite = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-light text-slate-800 mb-6">Want to Explore This?</h2>
           <p className="text-xl text-slate-600 mb-12">
-            We don't push. We listen. If it's a fit, we'll know within 15 minutes.
+            We don&apos;t push. We listen. If it&apos;s a fit, we&apos;ll know within 15 minutes.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
