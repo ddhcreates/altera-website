@@ -184,7 +184,7 @@ const AlteraWebsite = () => {
                 <Zap className="w-6 h-6 text-emerald-700" />
               </div>
               <h3 className="text-xl font-medium text-slate-800 mb-4">Private Tech & Ops Advisory</h3>
-              <p className="text-slate-600 mb-6 italic">You shouldn't have to know how—but someone on your side should.</p>
+              <p className="text-slate-600 mb-6 italic">You shouldn&apos;t have to know how—but someone on your side should.</p>
               <ul className="space-y-3 text-sm text-slate-600">
                 <li>• Smart vendor/tool selection</li>
                 <li>• AI tool deployment</li>
