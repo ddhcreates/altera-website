@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Calendar, Mail, Shield, Zap, Target, Settings, Users, ArrowRight, CheckCircle, MapPin, Clock, Building } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const AlteraWebsite = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -378,9 +379,9 @@ const AlteraWebsite = () => {
               <Mail className="w-8 h-8 text-emerald-700 mx-auto mb-4" />
               <h3 className="text-xl font-medium text-slate-800 mb-4">Send Inquiry</h3>
               <p className="text-slate-600 mb-6">Have specific questions about our packages or want to discuss custom scopes?</p>
-              <button className="w-full border-2 border-emerald-700 text-emerald-700 py-3 rounded-full hover:bg-emerald-50 transition-colors">
+              <Link href="/contact"><button className="w-full border-2 border-emerald-700 text-emerald-700 py-3 rounded-full hover:bg-emerald-50 transition-colors">
                 Send Message
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
