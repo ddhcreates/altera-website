@@ -143,7 +143,7 @@ const AlteraWebsite = () => {
             </div>
             <h1 className="text-5xl md:text-7xl font-light text-slate-800 mb-8 leading-tight">
               Crafting Systems<br />
-              <span className="text-emerald-700 font-normal">that Think With You</span>
+              <span className="text-emerald-700 font-normal">That Think With You</span>
             </h1>
             <p className="text-xl text-slate-600 mb-12 max-w-3xl mx-auto leading-relaxed">
               For founders, CXOs, and senior operators ready to scale with elegance.
