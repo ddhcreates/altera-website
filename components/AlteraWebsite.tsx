@@ -370,9 +370,13 @@ const AlteraWebsite = () => {
               <Calendar className="w-8 h-8 text-emerald-700 mx-auto mb-4" />
               <h3 className="text-xl font-medium text-slate-800 mb-4">Book Discovery Session</h3>
               <p className="text-slate-600 mb-6">Schedule your free 45-minute consultation to explore what clarity could look like for you.</p>
-              <button className="w-full bg-emerald-700 text-white py-3 rounded-full hover:bg-emerald-800 transition-colors">
-                Schedule Free Call
-              </button>
+                <a 
+                  href="https://calendly.com/danherbert-uze/45min" 
+                  target="_blank"
+                  className="w-full bg-emerald-700 text-white py-3 rounded-full hover:bg-emerald-800 transition-colors text-center block"
+                >
+                  Schedule Free Call
+                </a>
             </div>
             
             <div className="bg-gradient-to-br from-slate-50 to-emerald-50 p-8 rounded-2xl">
