@@ -108,7 +108,7 @@ export default function StartupOperationsPage() {
                   <div className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></div>
                   <div>
                     <h3 className="font-medium text-slate-800 mb-2">Everything runs through you</h3>
-                    <p className="text-slate-600 text-sm">Team constantly asks for decisions, approvals, and context you've already explained</p>
+                    <p className="text-slate-600 text-sm">Team constantly asks for decisions, approvals, and context you&apos;ve already explained</p>
                   </div>
                 </div>
                 
@@ -116,7 +116,7 @@ export default function StartupOperationsPage() {
                   <div className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></div>
                   <div>
                     <h3 className="font-medium text-slate-800 mb-2">Information black holes</h3>
-                    <p className="text-slate-600 text-sm">Important details live in someone's head or buried in Slack threads</p>
+                    <p className="text-slate-600 text-sm">Important details live in someone&apos;s head or buried in Slack threads</p>
                   </div>
                 </div>
                 
@@ -142,7 +142,7 @@ export default function StartupOperationsPage() {
                   <div className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></div>
                   <div>
                     <h3 className="font-medium text-slate-800 mb-2">Tool chaos</h3>
-                    <p className="text-slate-600 text-sm">15 different tools that don't talk to each other</p>
+                    <p className="text-slate-600 text-sm">15 different tools that don&apos;t talk to each other</p>
                   </div>
                 </div>
                 
@@ -390,12 +390,12 @@ export default function StartupOperationsPage() {
               Ready to Scale Without Chaos?
             </h2>
             <p className="text-xl text-emerald-100 mb-12 max-w-2xl mx-auto">
-              Get a free 45-minute operations assessment. We'll identify your biggest bottlenecks 
+              Get a free 45-minute operations assessment. We&apos;ll identify your biggest bottlenecks 
               and show you exactly how to fix them.
             </p>
             
             <div className="bg-white/10 backdrop-blur p-8 rounded-2xl mb-8">
-              <h3 className="text-xl font-medium mb-6">In your free assessment, we'll:</h3>
+              <h3 className="text-xl font-medium mb-6">In your free assessment, we&apos;ll:</h3>
               <div className="grid md:grid-cols-3 gap-6 text-left">
                 <div className="flex items-start space-x-3">
                   <Clock className="w-5 h-5 text-emerald-200 mt-1 flex-shrink-0" />

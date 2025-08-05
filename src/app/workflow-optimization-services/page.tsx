@@ -130,7 +130,7 @@ export default function WorkflowOptimizationPage() {
                     </div>
                     <div>
                       <h4 className="font-medium text-slate-800 mb-2">Approval Bottlenecks</h4>
-                      <p className="text-slate-600 text-sm">Everything waits for one person's approval</p>
+                      <p className="text-slate-600 text-sm">Everything waits for one person&apos;s approval</p>
                     </div>
                   </div>
                   
@@ -471,7 +471,7 @@ export default function WorkflowOptimizationPage() {
               Ready to Optimize Your Workflows?
             </h2>
             <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto">
-              Get a free workflow audit and discover exactly where you're losing time and money.
+              Get a free workflow audit and discover exactly where you&apos;re losing time and money.
             </p>
             
             <div className="bg-white/10 backdrop-blur p-8 rounded-2xl mb-8">
