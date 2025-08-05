@@ -51,7 +51,7 @@ const AlteraWebsite = () => {
         '2 hours/week of backend support',
         'Prototype Google Sheets dashboards',
         'Shared Notion boards for visibility',
-        'Systems map of priorities andssssss rituals',
+        'Systems map of priorities and rituals',
         'Smart automation cues - lightweight but powerful'
       ],
       ideal: 'Leaders seeking hands-on help creating clarity',
@@ -85,7 +85,7 @@ const AlteraWebsite = () => {
       duration: '4 weeks',
       calls: '4 sessions',
       buildHours: '32 hours',
-      description: 'Your fractional workflow CTO. Architecture for scale that feels simple. You’ll think less about tools, and lead more with clarity. Quietly powerful, designed to disappear behind you.',
+      description: 'Your fractional workflow CTO. Architecture for scale that feels simple. You'll think less about tools, and lead more with clarity. Quietly powerful, designed to disappear behind you.',
       features: [
         'All of ALIGN',
         '8 hours/week of system design & orchestration',
@@ -112,33 +112,34 @@ const AlteraWebsite = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-emerald-50">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-emerald-100">
+      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-emerald-100" role="navigation" aria-label="Main navigation">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-                <Image 
+              <Image 
                 src="/images/logo.png" 
-                alt="Altera Logo" 
+                alt="Altera - Executive Workflow Transformation Logo" 
                 width={120} 
                 height={40} 
                 className="object-contain"
-                />
+                priority
+              />
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <button onClick={() => scrollToSection('mission')} className="text-slate-600 hover:text-emerald-700 transition-colors">About</button>
-              <button onClick={() => scrollToSection('packages')} className="text-slate-600 hover:text-emerald-700 transition-colors">Packages</button>
-              <button onClick={() => scrollToSection('contact')} className="bg-emerald-700 text-white px-6 py-2 rounded-full hover:bg-emerald-800 transition-colors">Start Free Discovery</button>
+              <button onClick={() => scrollToSection('mission')} className="text-slate-600 hover:text-emerald-700 transition-colors" aria-label="Learn about our mission">About</button>
+              <button onClick={() => scrollToSection('packages')} className="text-slate-600 hover:text-emerald-700 transition-colors" aria-label="View our service packages">Packages</button>
+              <button onClick={() => scrollToSection('contact')} className="bg-emerald-700 text-white px-6 py-2 rounded-full hover:bg-emerald-800 transition-colors" aria-label="Start free discovery session">Start Free Discovery</button>
             </div>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <header className="pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="inline-flex items-center space-x-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-medium mb-8">
-              <span>🧭</span>
+              <span role="img" aria-label="compass">🧭</span>
               <span>Remote Advisory for Operations Flow</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-light text-slate-800 mb-8 leading-tight">
@@ -153,13 +154,15 @@ const AlteraWebsite = () => {
               <button 
                 onClick={() => scrollToSection('discovery')}
                 className="bg-emerald-700 text-white px-8 py-4 rounded-full text-lg hover:bg-emerald-800 transition-all duration-300 flex items-center justify-center space-x-2 group"
+                aria-label="Start your complimentary consultation session"
               >
                 <span>Start Your Complimentary Session</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
               </button>
               <button 
                 onClick={() => scrollToSection('packages')}
                 className="border-2 border-emerald-700 text-emerald-700 px-8 py-4 rounded-full text-lg hover:bg-emerald-50 transition-colors"
+                aria-label="Explore our service packages"
               >
                 Explore Packages
               </button>
@@ -170,11 +173,12 @@ const AlteraWebsite = () => {
           <button 
             onClick={() => scrollToSection('discovery')}
             className="animate-bounce p-2 rounded-full hover:bg-emerald-100 transition-colors"
+            aria-label="Scroll to discovery section"
           >
-            <ChevronDown className="w-6 h-6 text-emerald-700" />
+            <ChevronDown className="w-6 h-6 text-emerald-700" aria-hidden="true" />
           </button>
         </div>
-      </section>
+      </header>
 
       {/* Discovery Section */}
       <section id="discovery" className="py-20 px-6 bg-white">
@@ -187,7 +191,7 @@ const AlteraWebsite = () => {
           
           <div className="bg-gradient-to-br from-emerald-50 to-slate-50 p-8 rounded-2xl mb-12">
             <div className="flex items-center justify-center mb-6">
-              <Clock className="w-12 h-12 text-emerald-700" />
+              <Clock className="w-12 h-12 text-emerald-700" aria-hidden="true" />
             </div>
             <h3 className="text-2xl font-medium text-slate-800 mb-6">45-Minute Private Consultation</h3>
             <p className="text-lg text-slate-600 mb-8">
@@ -200,31 +204,31 @@ const AlteraWebsite = () => {
                 <h4 className="font-medium text-slate-800">We&apos;ll Explore:</h4>
                 <ul className="space-y-2 text-slate-600">
                   <li className="flex items-start space-x-2">
-                    <MapPin className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                    <MapPin className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                     <span>How your days and weeks actually unfold</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <MapPin className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                    <MapPin className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                     <span>Where friction slows flow, or dims focus</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <MapPin className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                    <MapPin className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                     <span>Aspirational goals across operations and leadership</span>
                   </li>
                 </ul>
               </div>
               <div className="space-y-4">
                 <h4 className="font-medium text-slate-800">You&apos;ll leave with:</h4>
-                    <ul className="space-y-2 text-slate-600">
-                    <li className="flex items-start space-x-2">
-                        <CheckCircle className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                        <span>A clearer mental map and practical next steps</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                        <CheckCircle className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                        <span>A discreet, respectful lens, regardless of whether we continue or not</span>
-                    </li>
-                    </ul>
+                <ul className="space-y-2 text-slate-600">
+                  <li className="flex items-start space-x-2">
+                    <CheckCircle className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                    <span>A clearer mental map and practical next steps</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <CheckCircle className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                    <span>A discreet, respectful lens, regardless of whether we continue or not</span>
+                  </li>
+                </ul>
                 <div className="text-3xl font-light text-emerald-700">
                   Cost: $0
                 </div>
@@ -232,15 +236,16 @@ const AlteraWebsite = () => {
             </div>
           </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
-                onClick={() => scrollToSection('contact')}
-                className="bg-emerald-700 text-white px-10 py-3 rounded-full hover:bg-emerald-800 transition-colors text-lg flex items-center justify-center space-x-2 group"
-                >
-                <span>Book Your Complimentary Session</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              onClick={() => scrollToSection('contact')}
+              className="bg-emerald-700 text-white px-10 py-3 rounded-full hover:bg-emerald-800 transition-colors text-lg flex items-center justify-center space-x-2 group"
+              aria-label="Book your complimentary consultation session"
+            >
+              <span>Book Your Complimentary Session</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
             </button>
-            </div>
+          </div>
         </div>
       </section>
 
@@ -258,7 +263,7 @@ const AlteraWebsite = () => {
 
           <div className="grid lg:grid-cols-2 gap-8">
             {packages.map((pkg, index) => (
-              <div key={pkg.id} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100">
+              <article key={pkg.id} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100">
                 <div className="flex items-center justify-between mb-6">
                   <div className={`px-3 py-1 rounded-full text-sm font-medium ${getColorClasses(pkg.color)}`}>
                     {String(index + 1).padStart(2, '0')}
@@ -276,12 +281,12 @@ const AlteraWebsite = () => {
                 <div className="space-y-4 mb-6">
                   <div className="flex items-center space-x-4 text-sm text-slate-600">
                     <div className="flex items-center space-x-2">
-                      <Calendar className="w-4 h-4" />
+                      <Calendar className="w-4 h-4" aria-hidden="true" />
                       <span>{pkg.calls}</span>
                     </div>
                     {pkg.buildHours && (
                       <div className="flex items-center space-x-2">
-                        <Settings className="w-4 h-4" />
+                        <Settings className="w-4 h-4" aria-hidden="true" />
                         <span>{pkg.buildHours} build time</span>
                       </div>
                     )}
@@ -297,7 +302,7 @@ const AlteraWebsite = () => {
                 <ul className="space-y-2 mb-8">
                   {pkg.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start space-x-2 text-sm text-slate-600">
-                      <CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -306,10 +311,11 @@ const AlteraWebsite = () => {
                 <button 
                   onClick={() => scrollToSection('contact')}
                   className="w-full bg-emerald-700 text-white py-3 rounded-full hover:bg-emerald-800 transition-colors font-medium"
+                  aria-label={`Start ${pkg.name} with complimentary session`}
                 >
                   Start with Complimentary Session
                 </button>
-              </div>
+              </article>
             ))}
           </div>
 
@@ -338,17 +344,17 @@ const AlteraWebsite = () => {
           <h2 className="text-3xl font-light mb-8">Built for Visionary Leaders</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <Building className="w-8 h-8 mx-auto mb-4 text-emerald-200" />
+              <Building className="w-8 h-8 mx-auto mb-4 text-emerald-200" aria-hidden="true" />
               <h3 className="font-medium mb-2">Fortune 500 Standards</h3>
               <p className="text-emerald-100 text-sm">Enterprise-grade thinking with boutique attention</p>
             </div>
             <div className="text-center">
-              <Shield className="w-8 h-8 mx-auto mb-4 text-emerald-200" />
+              <Shield className="w-8 h-8 mx-auto mb-4 text-emerald-200" aria-hidden="true" />
               <h3 className="font-medium mb-2">Remote Excellence</h3>
               <p className="text-emerald-100 text-sm">India-based founder delivering global quality</p>
             </div>
             <div className="text-center">
-              <Target className="w-8 h-8 mx-auto mb-4 text-emerald-200" />
+              <Target className="w-8 h-8 mx-auto mb-4 text-emerald-200" aria-hidden="true" />
               <h3 className="font-medium mb-2">Focused Engagement</h3>
               <p className="text-emerald-100 text-sm">One client per month for white-glove depth</p>
             </div>
@@ -367,25 +373,29 @@ const AlteraWebsite = () => {
           
           <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
             <div className="bg-gradient-to-br from-emerald-50 to-slate-50 p-8 rounded-2xl">
-              <Calendar className="w-8 h-8 text-emerald-700 mx-auto mb-4" />
+              <Calendar className="w-8 h-8 text-emerald-700 mx-auto mb-4" aria-hidden="true" />
               <h3 className="text-xl font-medium text-slate-800 mb-4">Book Discovery Session</h3>
               <p className="text-slate-600 mb-6">Schedule your free 45-minute consultation to explore what clarity could look like for you.</p>
-                <a 
-                  href="https://calendly.com/danherbert-uze/45min" 
-                  target="_blank"
-                  className="w-full bg-emerald-700 text-white py-3 rounded-full hover:bg-emerald-800 transition-colors text-center block"
-                >
-                  Schedule Free Call
-                </a>
+              <a 
+                href="https://calendly.com/danherbert-uze/45min" 
+                target="_blank"
+                className="w-full bg-emerald-700 text-white py-3 rounded-full hover:bg-emerald-800 transition-colors text-center block"
+                aria-label="Schedule free consultation call via Calendly"
+                rel="noopener noreferrer"
+              >
+                Schedule Free Call
+              </a>
             </div>
             
             <div className="bg-gradient-to-br from-slate-50 to-emerald-50 p-8 rounded-2xl">
-              <Mail className="w-8 h-8 text-emerald-700 mx-auto mb-4" />
+              <Mail className="w-8 h-8 text-emerald-700 mx-auto mb-4" aria-hidden="true" />
               <h3 className="text-xl font-medium text-slate-800 mb-4">Send Inquiry</h3>
               <p className="text-slate-600 mb-6">Have specific questions about our packages or want to discuss custom scopes?</p>
-              <Link href="/contact"><button className="w-full border-2 border-emerald-700 text-emerald-700 py-3 rounded-full hover:bg-emerald-50 transition-colors">
-                Send Message
-              </button></Link>
+              <Link href="/contact" aria-label="Go to contact form page">
+                <button className="w-full border-2 border-emerald-700 text-emerald-700 py-3 rounded-full hover:bg-emerald-50 transition-colors">
+                  Send Message
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -396,15 +406,15 @@ const AlteraWebsite = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center space-x-3 mb-6 md:mb-0">
-                <div className="flex items-center mb-6 md:mb-0">
-                    <Image 
-                        src="/images/logo-w.png" 
-                        alt="Altera Logo (white)" 
-                        width={100} 
-                        height={35} 
-                        className="object-contain"
-                    />
-                </div>
+              <div className="flex items-center mb-6 md:mb-0">
+                <Image 
+                  src="/images/logo-w.png" 
+                  alt="Altera Logo (white version)" 
+                  width={100} 
+                  height={35} 
+                  className="object-contain"
+                />
+              </div>
             </div>
             <p className="text-slate-400 text-center md:text-right">
               Executive Workflow Transformation<br />
