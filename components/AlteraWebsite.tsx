@@ -85,7 +85,7 @@ const AlteraWebsite = () => {
       duration: '4 weeks',
       calls: '4 sessions',
       buildHours: '32 hours',
-      description: 'Your fractional workflow CTO. Architecture for scale that feels simple. You'll think less about tools, and lead more with clarity. Quietly powerful, designed to disappear behind you.',
+      description: 'Your fractional workflow CTO. Architecture for scale that feels simple. You&apos;ll think less about tools, and lead more with clarity. Quietly powerful, designed to disappear behind you.',
       features: [
         'All of ALIGN',
         '8 hours/week of system design & orchestration',
@@ -432,4 +432,4 @@ const AlteraWebsite = () => {
   );
 };
 
-export default AlteraWebsite;
+export default AlteraWebsite
