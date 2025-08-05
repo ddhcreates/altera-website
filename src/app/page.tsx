@@ -1,6 +1,6 @@
 // app/page.tsx
 import { Metadata } from 'next'
-import AlteraWebsite from '../AlteraWebsite'
+import AlteraWebsite from '../../components/AlteraWebsite'
 
 export const metadata: Metadata = {
   title: 'Altera - Executive Workflow Transformation & Operations Consulting',
